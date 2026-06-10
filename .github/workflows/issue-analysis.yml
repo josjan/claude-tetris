@@ -9,8 +9,11 @@ jobs:
     if: github.actor != 'claude[bot]'
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
+      pull-requests: write
       issues: write
+      id-token: write
+      actions: read
 
     steps:
       - name: Checkout repository
