@@ -60,6 +60,10 @@ jobs:
 
                gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }} --body "COMMENT_BODY"
 
+               The comment body must be valid GitHub Flavored Markdown (GFM): use ## for headings,
+               **text** for bold, - for bullet lists, and `code` for inline code. Do not use
+               HTML tags or any syntax that GitHub does not render in issue comments.
+
                The comment must follow this template (fill in each section based on your analysis):
 
                ## Análisis del Issue — Claude
